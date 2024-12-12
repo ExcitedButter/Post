@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .sample {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+        .input-result {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        img, video {
+            max-width: 300px;
+            height: auto;
+            margin: 0;
+            padding: 0;
+        }
+        .description {
+            margin-top: 5px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="sample">
+            <div class="input-result">
+                <img src="image/816.png" alt="Input image">
+                <video controls autoplay muted loop class="media">
+                    <source src="video/816.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="description">Action Description: Knit the fabric.</div>
+        </div>
+        <div class="sample">
+            <div class="input-result">
+                <img src="image/83.png" alt="Input image">
+                <video controls autoplay muted loop class="media">
+                    <source src="video/83.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="description">Action Description: Roll dough.</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="sample">
+            <div class="input-result">
+                <img src="image/36.png" alt="Input image">
+                <video controls autoplay muted loop class="media">
+                    <source src="video/36.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="description">Action Description: Pour vinegar into bowl.</div>
+        </div>
+        <div class="sample">
+            <div class="input-result">
+                <img src="image/504.png" alt="Input image">
+                <video controls autoplay muted loop class="media">
+                    <source src="video/504.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="description">Action Description: Stir the pasta.</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="sample">
+            <div class="input-result">
+                <img src="image/13.png" alt="Input image">
+                <video controls autoplay muted loop class="media">
+                    <source src="video/13.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="description">Action Description: Throw paper into bin.</div>
+        </div>
+        <div class="sample">
+            <div class="input-result">
+                <img src="image/87.png" alt="Input image">
+                <video controls autoplay muted loop class="media">
+                    <source src="video/87.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="description">Action Description: Shake soy milk.</div>
+        </div>
+    </div>
+</body>
+</html>
