@@ -18,8 +18,7 @@
         .row {
             display: flex;
             justify-content: center;
-            gap: 15px;
-            margin-bottom: 15px;
+            margin-bottom: 1px;
         }
         .sample {
             display: flex;
@@ -39,79 +38,336 @@
             padding: 0;
         }
         .description {
-            margin-top: 5px;
+            margin-top: 1px;
             font-weight: bold;
             text-align: center;
+            font-size: medium;
+        }
+        .header {
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 1px;
+            font-size: large;
+        }
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .column .header {
+            margin-bottom: auto;
+        }
+        .description-container {
+            display: flex;
+            width: 100%;
+            justify-content: space-between; /* Ensures content stays separated */
+        }
+        .description-left {
+            text-align: left;
+            text-decoration: underline;
+        }
+        .description-right {
+            text-align: right;
+            margin-left: auto; /* This will push the text to the right */
+            width: 100%; /* Ensures it takes the full width of its container */
+        }
+        .third-column {
+            margin-left: 5px; /* Adjust the value as needed */
         }
     </style>
 </head>
 <body>
     <div class="row">
-        <div class="sample">
-            <div class="input-result">
-                <img src="image/816.png" alt="Input image">
-                <video controls autoplay muted loop class="media">
-                    <source src="video/816.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+        <div class="column">
+            <div class="header">Input Context Image</div>
+            <div class="sample">
+                <div class="input-result">
+                    <img src="image/816.png" alt="Input image">
+                </div>
+                <div class="description-container">
+                    <div class="description description-right">Input Action Description:</div>
+                </div>
             </div>
-            <div class="description">Action Description: Knit the fabric.</div>
         </div>
-        <div class="sample">
-            <div class="input-result">
-                <img src="image/83.png" alt="Input image">
-                <video controls autoplay muted loop class="media">
-                    <source src="video/83.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+        <div class="column">
+            <div class="header">Generated Video</div>
+            <div class="sample">
+                <div class="input-result">
+                    <video controls autoplay muted loop class="media">
+                        <source src="video/816.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="description-container">
+                    <div class="description description-left">Knit the fabric.</div>
+                </div>
             </div>
-            <div class="description">Action Description: Roll dough.</div>
+        </div>
+        <div class="third-column">
+            <div class="header">Input Context Image</div>
+            <div class="sample">
+                <div class="input-result">
+                    <img src="image/83.png" alt="Input image">
+                </div>
+                <div class="description-container">
+                    <div class="description description-right">Input Action Description:</div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="header">Generated Video</div>
+            <div class="sample">
+                <div class="input-result">
+                    <video controls autoplay muted loop class="media">
+                        <source src="video/83.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="description-container">
+                    <div class="description description-left">Roll dough.</div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row">
-        <div class="sample">
-            <div class="input-result">
-                <img src="image/36.png" alt="Input image">
-                <video controls autoplay muted loop class="media">
-                    <source src="video/36.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+        <div class="column">
+            <div class="sample">
+                <div class="input-result">
+                    <img src="image/36.png" alt="Input image">
+                </div>
+                <div class="description-container">
+                    <div class="description description-right">Input Action Description:</div>
+                </div>
             </div>
-            <div class="description">Action Description: Pour vinegar into bowl.</div>
         </div>
-        <div class="sample">
-            <div class="input-result">
-                <img src="image/504.png" alt="Input image">
-                <video controls autoplay muted loop class="media">
-                    <source src="video/504.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+        <div class="column">
+            <div class="sample">
+                <div class="input-result">
+                    <video controls autoplay muted loop class="media">
+                        <source src="video/36.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="description-container">
+                    <div class="description description-left">Pour vinegar into bowl.</div>
+                </div>
             </div>
-            <div class="description">Action Description: Stir the pasta.</div>
+        </div>
+        <div class="third-column">
+            <div class="sample">
+                <div class="input-result">
+                    <img src="image/504.png" alt="Input image">
+                </div>
+                <div class="description-container">
+                    <div class="description description-right">Input Action Description:</div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="sample">
+                <div class="input-result">
+                    <video controls autoplay muted loop class="media">
+                        <source src="video/504.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="description-container">
+                    <div class="description description-left">Stir the pasta.</div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row">
-        <div class="sample">
-            <div class="input-result">
-                <img src="image/13.png" alt="Input image">
-                <video controls autoplay muted loop class="media">
-                    <source src="video/13.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+        <div class="column">
+            <div class="sample">
+                <div class="input-result">
+                    <img src="image/13.png" alt="Input image">
+                </div>
+                <div class="description-container">
+                    <div class="description description-right">Input Action Description:</div>
+                </div>
             </div>
-            <div class="description">Action Description: Throw paper into bin.</div>
         </div>
-        <div class="sample">
-            <div class="input-result">
-                <img src="image/87.png" alt="Input image">
-                <video controls autoplay muted loop class="media">
-                    <source src="video/87.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+        <div class="column">
+            <div class="sample">
+                <div class="input-result">
+                    <video controls autoplay muted loop class="media">
+                        <source src="video/13.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="description-container">
+                    <div class="description description-left">Throw paper into bin.</div>
+                </div>
             </div>
-            <div class="description">Action Description: Shake soy milk.</div>
+        </div>
+        <div class="third-column">
+            <div class="sample">
+                <div class="input-result">
+                    <img src="image/87.png" alt="Input image">
+                </div>
+                <div class="description-container">
+                    <div class="description description-right">Input Action Description:</div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="sample">
+                <div class="input-result">
+                    <video controls autoplay muted loop class="media">
+                        <source src="video/87.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="description-container">
+                    <div class="description description-left">Shake soy milk.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="sample">
+                <div class="input-result">
+                    <img src="image/56.png" alt="Input image">
+                </div>
+                <div class="description-container">
+                    <div class="description description-right">Input Action Description:</div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="sample">
+                <div class="input-result">
+                    <video controls autoplay muted loop class="media">
+                        <source src="video/56.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="description-container">
+                    <div class="description description-left">Pick up and crack egg.</div>
+                </div>
+            </div>
+        </div>
+        <div class="third-column">
+            <div class="sample">
+                <div class="input-result">
+                    <img src="image/31.png" alt="Input image">
+                </div>
+                <div class="description-container">
+                    <div class="description description-right">Input Action Description:</div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="sample">
+                <div class="input-result">
+                    <video controls autoplay muted loop class="media">
+                        <source src="video/31.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="description-container">
+                    <div class="description description-left">Julienne carrot.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="third-column">
+            <div class="sample">
+                <div class="input-result">
+                    <img src="image/158.png" alt="Input image">
+                </div>
+                <div class="description-container">
+                    <div class="description description-right">Input Action Description:</div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="sample">
+                <div class="input-result">
+                    <video controls autoplay muted loop class="media">
+                        <source src="video/158.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="description-container">
+                    <div class="description description-left">Drop garlic into fridge.</div>
+                </div>
+            </div>
+        </div>
+        <div class="third-column">
+            <div class="sample">
+                <div class="input-result">
+                    <img src="image/42.png" alt="Input image">
+                </div>
+                <div class="description-container">
+                    <div class="description description-right">Input Action Description:</div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="sample">
+                <div class="input-result">
+                    <video controls autoplay muted loop class="media">
+                        <source src="video/42.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="description-container">
+                    <div class="description description-left">Wash fruit.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="sample">
+                <div class="input-result">
+                    <img src="image/792.png" alt="Input image">
+                </div>
+                <div class="description-container">
+                    <div class="description description-right">Input Action Description:</div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="sample">
+                <div class="input-result">
+                    <video controls autoplay muted loop class="media">
+                        <source src="video/792.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="description-container">
+                    <div class="description description-left">Cut cucumber.</div>
+                </div>
+            </div>
+        </div>
+        <div class="third-column">
+            <div class="sample">
+                <div class="input-result">
+                    <img src="image/24.png" alt="Input image">
+                </div>
+                <div class="description-container">
+                    <div class="description description-right">Input Action Description:</div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="sample">
+                <div class="input-result">
+                    <video controls autoplay muted loop class="media">
+                        <source src="video/24.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="description-container">
+                    <div class="description description-left">Peel garlic.</div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
 </html>
-
